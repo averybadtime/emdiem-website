@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="621px" height="488px" viewBox="0 0 621 488" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>DISEÑO UX</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00A0F5" offset="0%"></stop>
+            <stop stop-color="#0066E7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M413.154591,28.0575531 C413.154591,28.0575531 258.841551,-110.628305 151.654341,-42.0605452 C44.4671321,26.5072145 214.992238,143.317263 77.5977241,231.611997 C-59.7967897,319.906732 196.478084,460.270621 342.64246,490.487847 C488.806836,520.705073 544.349299,434.32036 544.349299,434.32036 C544.349299,434.32036 599.680311,361.983732 497.958188,282.947653 C396.236065,203.911574 601.572653,178.744524 413.154591,28.0575531" id="DISEÑO-UX" fill="url(#linearGradient-1)" transform="translate(298.871088, 217.900382) rotate(-60.000000) translate(-298.871088, -217.900382) "></path>
+    </g>
+</svg>

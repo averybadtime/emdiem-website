@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="851px" height="670px" viewBox="0 0 851 670" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Fondo Gsp</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M208.177677,-57.6669909 C61.0878223,36.3956342 295.09441,196.637997 106.551959,317.762481 C-81.9904912,438.886965 269.68798,631.440957 470.265055,672.893552 C670.84213,714.346148 747.061419,595.841869 747.061419,595.841869 C747.061419,595.841869 822.990539,496.609035 683.400261,388.18576 C543.809983,279.762485 825.587344,245.237822 567.026779,38.5224198 C567.026779,38.5224198 355.267532,-151.729616 208.177677,-57.6669909 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Fondo-Gsp" fill="#18A6E0" transform="translate(410.198888, 298.952613) rotate(-60.000000) translate(-410.198888, -298.952613) " xlink:href="#path-1"></use>
+    </g>
+</svg>

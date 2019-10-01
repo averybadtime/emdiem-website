@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="810px" height="714px" viewBox="0 0 810 714" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>fondo transito</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="107.601246%" y2="41.6255273%" id="linearGradient-1">
+            <stop stop-color="#0089CC" offset="0%"></stop>
+            <stop stop-color="#00519D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M133.960146,588.330169 C228.347377,600.763851 330.735263,523.054096 410.724214,557.245463 C490.7142,591.438841 554.705982,701.787638 610.698144,709.559317 C666.691341,717.328985 733.88297,729.762667 767.478268,600.763851 C801.073565,471.765035 820.271617,286.81415 804.273413,160.923001 C788.275209,35.0318515 687.488282,-11.5942022 625.096424,2.39280959 C562.704566,16.3818322 505.11248,70.7785598 361.130712,41.2491949 C217.14998,11.7188247 -66.013784,100.30893 13.9762019,456.222682 C13.9762019,456.222682 39.5729146,575.896488 133.960146,588.330169 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fondo-transito">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

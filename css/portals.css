@@ -1,0 +1,49 @@
+.Page.Page__Portal.in {
+  min-width: 100px;
+  overflow : visible;
+  position : relative;
+  width    : auto;
+}
+.Page.Page__Portal.in .Portal {
+  height: 100vh;
+}
+.Page.Page__Portal.in .Portal-mask {
+  height  : 100vh;
+  left    : 0;
+  position: absolute;
+  top     : 0;
+  z-index : 99;
+}
+.Page.Page__Portal.in .Portal-guy {
+  left     : 0;
+  max-width: 600px;
+  position : absolute;
+  top      : 40%;
+  transform: translate(0%, -70%);
+  width    : 100%;
+}
+.Page.Page__Portal.out .Portal {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.Page.Page__Portal.out .Portal-mask {
+  height  : 100vh;
+  position: absolute;
+  top     : 0;
+  z-index : 99;
+}
+.Page.Page__Portal.out .Portal-guy {
+  left     : -170px;
+  max-width: 700px;
+  position : absolute;
+  transform: translate(0, -30%) scale(.6);
+  width    : 100%;
+  z-index: 1;
+}
+.animate__Portal-guy__in {
+  animation: portal-guy-in 4s forwards ease-out 1s;
+}
+.animate__Portal-guy__out {
+  animation: portal-guy-out 4s forwards ease-out;
+}

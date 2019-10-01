@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="612px" height="601px" viewBox="0 0 612 601" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Grafismo gsp</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="51.6557309%" y1="-22.5433029%" x2="54.2226945%" y2="98.1697485%" id="linearGradient-1">
+            <stop stop-color="#35D2F2" offset="0%"></stop>
+            <stop stop-color="#008CC3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M348.007284,9.13798657 L605.740232,310.744212 C613.570126,319.906972 612.352993,333.56759 603.021688,341.256058 L295.867521,594.333731 C286.536217,602.022199 272.624316,600.827049 264.794421,591.66429 L7.06147342,290.058064 C-0.768421098,280.895305 0.448712517,267.234687 9.78001743,259.546219 L316.934184,6.46854598 C326.265489,-1.21992187 340.17739,-0.0247726049 348.007284,9.13798657 Z" id="Grafismo-gsp" fill="url(#linearGradient-1)" transform="translate(306.400853, 300.401138) rotate(-5.000000) translate(-306.400853, -300.401138) "></path>
+    </g>
+</svg>

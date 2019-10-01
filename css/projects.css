@@ -1,0 +1,207 @@
+#FlexRowContainer {
+  display   : flex;
+  margin-top: 61px;
+}
+#FlexRowContainer .VerticalContainer {
+  overflow: hidden;
+}
+#Projects {
+  min-width: 100vw;
+  position : relative;
+  width    : 100vw;
+}
+#Projects .planets {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+#Projects .planets img {
+  max-width: 100px;
+}
+#Projects .planets img:first-child {
+  animation: infrastructure-planet 45s infinite ease-in-out;
+  left: -20vw;
+  max-width: 25%;
+  position: relative;
+  width: 100%;
+}
+#Projects .planets img:last-child {
+  animation: floatingInSpace 4s infinite ease-in-out;
+  left: -80vw;
+  max-width: 17.5%;
+  position: relative;
+  bottom: -60vh;
+  width: 100%;
+}
+.fixed {
+  position: fixed;
+  top: -25vw !important;
+}
+#Projects .Projects__Item {
+  align-items    : center;
+  display        : flex;
+  height         : calc(100vh - 61px);
+  justify-content: center;
+  position       : relative;
+  width          : 100%;
+  z-index        : 2;
+}
+#Projects .Projects__Item .label {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  font-size: 36px;
+  font-weight: 900;
+  position: absolute;
+  right: -200px;
+  top: 10vh;
+  z-index: 999;
+}
+#Projects .Projects__Item .label img {
+  margin-right: 12px;
+  max-width: 40px;
+}
+#Projects .Projects__Item .project-device-with-shape {
+  position: relative;
+}
+.projects-title {
+  color      : white;
+  font-size  : 120px;
+  font-weight: 900;
+  left       : 10vw;
+  opacity    : .65;
+  position   : relative;
+  top        : 30vh;
+}
+.projects-title .caption-1,
+.projects-title .caption-2 {
+  color      : white;
+  font-size  : 20px;
+  font-weight: 600;
+  line-height: 35px;
+  margin-top : 12px;
+  max-width  : 280px;
+}
+/** Project items */
+#Projects .Projects__Item .project-device-with-shape {
+  background-position: center !important;
+  background-repeat  : no-repeat !important;
+  background-size    : contain !important;
+  display            : flex;
+  height             : 65vh;
+  justify-content    : center;
+  width              : 60vw;
+}
+#Projects .Projects__Item .project-device-with-shape.carnaval {
+  background: url("/assets/img/projects/Carnaval/fondo.svg");
+}
+#Projects .Projects__Item .project-device-with-shape.transmetro {
+  background: url("/assets/img/projects/Transmetro/fondo.svg");
+}
+#Projects .Projects__Item .project-device-with-shape.procaps {
+  background: url("/assets/img/projects/Procaps/fondo.svg");
+  display   : block;
+}
+#Projects .Projects__Item .project-device-with-shape.colmed {
+  background: url("/assets/img/projects/Colmed/fondo.svg");
+}
+#Projects .Projects__Item .project-device-with-shape.gsp {
+  background: url("/assets/img/projects/gsp/fondo.svg");
+}
+#Projects .Projects__Item .project-device-with-shape.transito {
+  background: url("/assets/img/projects/transito/fondo.svg");
+}
+#Projects .Projects__Item .project-device-with-shape.olimpica {
+  background: url("/assets/img/projects/olimpica/fondo.svg");
+}
+/* Carnaval */
+#Projects .Projects__Item .project-device-with-shape.carnaval .figure {
+  bottom  : 0;
+  height  : auto;
+  position: absolute;
+  width   : 100%;
+}
+/* Transmetro */
+#Projects .Projects__Item .project-device-with-shape.transmetro .device {
+  height: 100% !important;
+  top: 0;
+  width: auto;
+}
+/* Procaps */
+#Projects .Projects__Item .project-device-with-shape.procaps .video {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 600px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 75%;
+}
+#Projects .Projects__Item .project-device-with-shape.procaps .superhero {
+  bottom   : 10%;
+  left     : 50%;
+  max-width: 250px;
+  position : absolute;
+  transform: translateX(-50%);
+  width: 30%;
+  z-index  : 5;
+}
+/* Colmed */
+#Projects .Projects__Item .project-device-with-shape.colmed .device {
+  bottom      : -5% !important;
+  margin-right: 5% !important;
+}
+#Projects .Projects__Item .project-device-with-shape.colmed .boxes {
+  position : relative;
+  max-width: 20%;
+  opacity  : .25;
+}
+#Projects .Projects__Item .project-device-with-shape.colmed .box-1 {
+  right    : -270px;
+  top      : -110px;
+  transform: rotate(-90deg);
+}
+#Projects .Projects__Item .project-device-with-shape.colmed .box-2 {
+  bottom   : -90px;
+  left     : -200px;
+  transform: rotate(90deg);
+}
+/** GSP */
+#Projects .Projects__Item .project-device-with-shape.gsp .device {
+  height: auto !important;
+  max-width: 500px;
+  top   : 0;
+  width : 100%;
+}
+/** Tránsito de Barranquilla */
+#Projects .Projects__Item .project-device-with-shape.transito .video {
+  bottom    : 0;
+  height    : auto;
+  margin    : auto;
+  max-height: 60vh;
+  max-width : 600px;
+  position  : absolute;
+  top       : 0;
+  width     : 80%;
+}
+/** Olímpica */
+#Projects .Projects__Item .project-device-with-shape.olimpica .waves {
+  z-index: -1;
+}
+#Projects .Projects__Item .project-device-with-shape.carnaval .device,
+#Projects .Projects__Item .project-device-with-shape.transmetro .device,
+#Projects .Projects__Item .project-device-with-shape.colmed .device,
+#Projects .Projects__Item .project-device-with-shape.gsp .device,
+#Projects .Projects__Item .project-device-with-shape.olimpica .device {
+  bottom    : 0;
+  height    : 100%;
+  margin    : auto;
+  max-height: 60vh;
+  position  : absolute;
+  z-index   : 99;
+}

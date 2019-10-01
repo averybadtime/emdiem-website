@@ -1,0 +1,229 @@
+@media screen and (max-height: 600px) {
+  nav.TopNav .Logo,
+  .index__main-content, .what-we-do__main-content {
+    margin-left: 100px;
+  }
+  nav.TopNav ul {
+    margin: 12px;
+    padding: 5px;
+  }
+  .Page.Page__Index .Page__Content h1.header {
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 340px;
+  }
+  .Page.Page__Index .Page__Content .about {
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 390px;
+  }
+  .Page.Page__Index .social-media {
+    left: 100px;
+  }
+  .Page.Page__Index .social-media li {
+    margin: 0 6px;
+  }
+  .Page.Page__Index .social-media li a {
+    font-size: 13px;
+  }
+  .Page.Page__Index .social-media img {
+    max-width: 18px;
+  }
+  .Page.Page__Index .scroll-down {
+    bottom: 40px;
+  }
+  .Page.Page__Index .scroll-down img {
+    max-width: 35px;
+  }
+  .Page.Page__WhatWeDo h1.header {
+    font-size: 120px;
+    line-height: 100px;
+    letter-spacing: 1px;
+    position: relative;
+    left: -23px;
+    max-width: 510px;
+  }
+  .Page.Page__WhatWeDo .what-we-do {
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 25px;
+    max-width: 440px;
+  }
+  .what-we-do__services .item {
+    margin-left: 75px !important;
+    min-width: 650px;
+  }
+  .service.ui-ux {
+    max-width: 400px;
+  }
+  .what-we-do__services .item .item-description {
+    margin-left: 48px;
+  }
+  .what-we-do__services .item h5.title {
+    font-size: 32px;
+    line-height: 1;
+  }
+  .what-we-do__services .item .simple-text {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+  .service.animation {
+    max-width: 330px;
+  }
+  .service.animation .characters .screen {
+    height: 100px;
+  }
+  .service.animation .characters .man {
+    width: 120px;
+  }
+  .service.mobile-development {
+    max-width: 350px;
+  }
+  .service.mobile-development .characters .girl {
+    left: -80px;
+    width: 120px;
+  }
+  .service.mobile-development .characters .man {
+    left: 110px;
+    top: -60px;
+    width: 200px;
+  }
+  .service.mobile-development .characters .code {
+    top: -30px;
+  }
+  .service.mobile-development .characters .dots {
+    bottom: -30px;
+    left: 110px;
+  }
+  .service.mobile-development .characters .mark {
+    bottom: -40px;
+    right: -120px;
+    width: 40px;
+  }
+  .what-we-do__services .item:nth-of-type(3) .item-description {
+    margin-left: 80px;
+    max-width: 320px;
+  }
+  .service.web-development {
+    max-width: 400px;
+  }
+  .service.web-development .characters .code {
+    width: 300px;
+  }
+  .service.web-development .characters .man {
+     right: -78px;
+     top: -20px;
+  }
+  .service.web-development .characters .girl {
+    bottom: -18px;
+  }
+  .what-we-do__services .item:nth-of-type(4) .item-description > div {
+    max-width: 380px;
+  }
+  .service.infrastructure {
+    max-width: 400px;
+  }
+  .service.infrastructure .characters .planet {
+    left: 70px;
+    top: 30px;
+    width: 50px;
+  }
+  .service.infrastructure .characters .guy {
+    top: 40px;
+    width: 300px;
+  }
+  /* portal guy in */
+  .Page.Page__Portal.in .Portal-guy {
+    left: -20% !important;
+    top: 45% !important;
+  }
+  .Page.Page.Page__Portal.out .Portal-guy {
+    max-width: 50vw;
+    transform: translate(0, -30%) scale(.6) rotate(-15deg);
+  }
+  #FlexRowContainer {
+    margin-top: 60px;
+  }
+  .Page.Page__Portal.out .Portal,
+  .Page.Page__Portal.out .Portal-mask {
+    height: calc(100vh - 60px);
+  }
+  .v-align-top {
+    margin-top: 0px;
+  }
+  .projects-title {
+    font-size: 70px;
+  }
+  .projects-title .caption-1,
+  .projects-title .caption-2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  #Projects .Projects__Item .label {
+    font-size: 16px;
+    right: -100px;
+    top: 10vh;
+    width: 200px;
+  }
+  #Customers h1.title {
+    font-size: 60px !important;
+    letter-spacing: 2.5px;
+  }
+  #Customers .text p {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 370px;
+  }
+  #Customers .Customers__List {
+    margin: 24px auto 36px;
+    width: 90%;
+  }
+  footer {
+    padding: 60px 48px 100px;
+  }
+  footer .Footer__Content .Contact__About h4 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 1;
+    max-width: 370px;
+  }
+  footer .Footer__Content .Contact__About ul li {
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 1.5;
+  }
+  footer .Footer__Content form {
+    min-width: 400px;
+  }
+  footer .contact-form .input-group {
+    margin-bottom: 18px;
+  }
+  footer .contact-form .input-group label {
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+  }
+  footer .contact-form .input-group input,
+  footer .contact-form .input-group textarea {
+    font-size: 16px;
+    height: 40px;
+    padding: 0 16px;
+  }
+  footer .contact-form .input-group textarea {
+    height: 160px;
+    padding: 12px;
+  }
+  footer .contact-form input[type="submit"] {
+    font-size: 18px;
+    height: 40px;
+    width: 130px;
+  }
+  footer .footer-links ul li a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-height: 601px) and (max-height: 800px) {
+}
+@media screen and (min-height: 801px) {
+}

@@ -1,0 +1,281 @@
+* {
+  box-sizing         : border-box;
+  -moz-user-select   : none;
+  -webkit-user-select: none;
+  user-select        : none;
+  white-space        : normal;
+}
+body, html {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body.projects {
+  background: linear-gradient(to bottom, #00a0f5 50%, #0055bf);
+  background-attachment: fixed;
+}
+nav.TopNav {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  transition: all .25s;
+  width: 100vw;
+  z-index: 999;
+}
+nav.TopNav.light-bg {
+  background: #ffffff !important;
+  color: #434244 !important;
+}
+nav.TopNav .Logo {
+  margin-left: 140px;
+}
+nav.TopNav ul {
+  align-items: center;
+  display: flex;
+  padding: 10px 48px;
+}
+nav.TopNav ul li a {
+  color: inherit;
+  font-weight: 600;
+  margin: 10px 16px;
+  text-decoration: none;
+}
+nav.TopNav ul li a.LetsDoIt {
+  background: #3399ff;
+  border-radius: 5px;
+  color: #ffffff !important;
+  padding: 8px 24px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.HorizontalScrollContainer {
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
+}
+.Page {
+  display: inline-block;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  width: 100vw;
+}
+.Page.Page__Index {
+  padding: 148px 74px;
+}
+.Page .Page__Content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.Page.Page__Index .Page__Content h1.header {
+  font-size: 65px;
+  font-weight: 900;
+  letter-spacing: 2.17px;
+  line-height: 65px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  white-space: normal;
+}
+.Page.Page__Index .Page__Content .about {
+  color: #7e7e7e;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: .73px;
+  line-height: 37px;
+  max-width: 500px;
+  white-space: normal;
+}
+.Page.Page__Index .Person--floating {
+  animation: floatingInSpace 6s infinite ease-in-out;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+}
+.dot-planet {
+  max-width: 60px;
+  position: absolute;
+}
+.dot-planet.planet-1 {
+  left: 43%;
+  z-index: 1;
+}
+.dot-planet.planet-2 {
+  right: 10%;
+  top: 35%;
+  z-index: 1;
+}
+.dot-planet.planet-3 {
+  bottom: 10%;
+  right: 31.5%;
+  z-index: 1;
+}
+.dot-planet.planet-4 {
+  bottom: 25%;
+  left: -30px;
+}
+.dot-planet.planet-5 {
+  left: 17.5%;
+  top: 15%;
+}
+.dot-planet.planet-6 {
+  bottom: 15%;
+  left: 12.5%;
+}
+.dot-planet.planet-7 {
+  filter: blur(10px) !important;
+  max-width: 150px;
+  position: fixed;
+  top: 78%;
+}
+.dot-planet.planet-8 {
+  left: -75px;
+  z-index: 1;
+}
+.dot-planet.planet-9 {
+  left: 75%;
+  top: 125%;
+  z-index: 1;
+}
+.dot-planet.planet-10 {
+  left: 75%;
+  top: -40%;
+  z-index: 1;
+}
+.dot-planet.planet-11 {
+  filter: blur(7px);
+  bottom: -15%;
+  left: 50%;
+  max-width: 150px;
+  z-index: 1;
+}
+.dot-planet.blur {
+  filter: blur(5px);
+}
+.random-planet {
+  max-width: 250px;
+  position: absolute;
+  top: 75%;
+}
+.random-planet.planet-2 {
+  left: 1400px;
+  top: 30%;
+}
+.random-planet.planet-3 {
+  filter: blur(5px);
+  left: 2780px;
+  top: 70%;
+}
+.first-orbit {
+  left: 25%;
+  margin: auto;
+  max-width: 40%;
+  position: absolute;
+  transform: rotate(15deg);
+  top: -50%;
+  z-index: -1;
+}
+.out-splash-blue {
+  position: fixed;
+}
+.out-splash-blue-1 {
+  top: 90%;
+  transform: rotate(-120deg);
+}
+.Page.Page__Index .Person--floating.Person--floating-1 {
+  animation-delay: .5s;
+  left: 5%;
+  right: 0;
+  top: 35%;
+  width: 17.5%;
+}
+.Page.Page__Index .Person--floating.Person--floating-2 {
+  bottom: 30%;
+  right: 15%;
+  width: 14%;
+}
+.Page.Page__Index .Person--floating.Person--floating-3 {
+  animation-delay: 1s;
+  bottom: -60%;
+  right: 15%;
+  width: 15%;
+}
+.Page.Page__Index .social-media {
+  bottom: 32px;
+  left: 140px;
+  position: absolute;
+}
+.Page.Page__Index .social-media li {
+  display: inline-block;
+  margin: 0 12px;
+}
+.Page.Page__Index .social-media li a {
+  align-items: center;
+  color: #434244;
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.Page.Page__Index .social-media img {
+  margin-right: 8px;
+  max-width: 20px;
+}
+.Page.Page__Index .scroll-down {
+  bottom: 36px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.Page.Page__WhatWeDo {
+  display: flex;
+  padding-left: 148px;
+}
+.Page.Page__WhatWeDo {
+  align-items: center;
+  flex-direction: row;
+  width: fit-content;
+}
+.Page.Page__WhatWeDo h1.header {
+  font-size: 165px;
+  font-weight: 900;
+  letter-spacing: 5.5px;
+  line-height: 145px;
+  margin: 0;
+  max-width: 800px;
+}
+.Page.Page__WhatWeDo .what-we-do {
+  margin: 0px 0px 12px 24px;
+  width: 460px;
+}
+.Page.Page__Services {
+  min-width: 4000px;
+  padding: 0;
+}
+.Page.Page__Portal {
+  /* min-width: 900px; */
+  padding: 0;
+  width: auto;
+}
+.Page.Page__Portal .Portal__Start {
+  height: 100%;
+  width: 100%;
+}
+.Page.Page__Portal .Portal__Start img {
+  height: inherit;
+  width: inherit;
+}

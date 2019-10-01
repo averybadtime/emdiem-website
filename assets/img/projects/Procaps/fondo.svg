@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1117px" height="947px" viewBox="0 0 1117 947" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>procaps 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.6%" y="-4.2%" width="111.1%" height="113.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="21" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="106.111913%" y2="41.7414402%" id="linearGradient-2">
+            <stop stop-color="#CC1212" offset="0%"></stop>
+            <stop stop-color="#920000" offset="100%"></stop>
+        </linearGradient>
+        <path d="M343.321247,858.343746 C453.656406,793.598862 566.389698,704.874859 727.095469,719.262611 C887.799837,733.650363 1007.72893,697.680983 1048.5042,505.846627 C1089.27948,314.010869 846.513784,-31.2909712 570.930574,2.27951498 C295.350171,35.8500011 -102.602363,337.692581 24.3106437,736.047854 C62.1559583,854.837994 232.986088,923.087227 343.321247,858.343746 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="procaps-6" filter="url(#filter-1)" transform="translate(32.000000, 11.000000)">
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="897px" height="714px" viewBox="0 0 897 714" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Fondo colmed</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-0.559281168%" y1="-5.66077443%" x2="117.298834%" y2="68.0802879%" id="linearGradient-1">
+            <stop stop-color="#9B38DC" offset="0%"></stop>
+            <stop stop-color="#4D007D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M308.177677,144.333009 C161.087822,238.395634 395.09441,398.637997 206.551959,519.762481 C18.0095088,640.886965 369.68798,833.440957 570.265055,874.893552 C770.84213,916.346148 847.061419,797.841869 847.061419,797.841869 C847.061419,797.841869 922.990539,698.609035 783.400261,590.18576 C643.809983,481.762485 925.587344,447.237822 667.026779,240.52242 C667.026779,240.52242 455.267532,50.270384 308.177677,144.333009 Z" id="path-2"></path>
+    </defs>
+    <g id="Fondo-colmed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="trabajos-copy" transform="translate(-76.000000, -170.000000)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" transform="translate(510.198888, 500.952613) rotate(-60.000000) translate(-510.198888, -500.952613) " xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

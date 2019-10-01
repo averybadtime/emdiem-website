@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2400px" height="3335px" viewBox="0 0 2400 3335" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>LINEA</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="65.2459546%" y1="0%" x2="44.3902319%" y2="96.3178741%" id="linearGradient-1">
+            <stop stop-color="#00A0F5" offset="0%"></stop>
+            <stop stop-color="#0066E7" stop-opacity="0.117159194" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ellipse id="LINEA" stroke="url(#linearGradient-1)" stroke-width="7" transform="translate(1199.869151, 1667.549545) rotate(30.000000) translate(-1199.869151, -1667.549545) " cx="1199.86915" cy="1667.54954" rx="873.364417" ry="1853.02676"></ellipse>
+    </g>
+</svg>

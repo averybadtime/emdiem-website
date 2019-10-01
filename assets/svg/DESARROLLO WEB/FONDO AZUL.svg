@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="621px" height="489px" viewBox="0 0 621 489" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>DESARROLLO WEB</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00A0F5" offset="0%"></stop>
+            <stop stop-color="#0066E7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M413.154591,28.2567885 C413.154591,28.2567885 258.841551,-110.42907 151.654341,-41.8613098 C44.4671321,26.7064498 214.992238,143.516498 77.5977241,231.811233 C-59.7967897,320.105967 196.478084,460.469856 342.64246,490.687082 C488.806836,520.904308 544.349299,434.519595 544.349299,434.519595 C544.349299,434.519595 599.680311,362.182967 497.958188,283.146888 C396.236065,204.110809 601.572653,178.943759 413.154591,28.2567885" id="DESARROLLO-WEB" fill="url(#linearGradient-1)" transform="translate(298.871088, 218.099618) rotate(-60.000000) translate(-298.871088, -218.099618) "></path>
+    </g>
+</svg>

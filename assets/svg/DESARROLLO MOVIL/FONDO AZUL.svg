@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="572px" height="480px" viewBox="0 0 572 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>DESARROLLO MOVIL</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="10.7397333%" y1="9.37708853%" x2="97.8237243%" y2="92.1178493%" id="linearGradient-1">
+            <stop stop-color="#00A0F5" offset="0%"></stop>
+            <stop stop-color="#0066E7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M186.495492,466.421992 C246.43064,431.239773 307.668478,383.027356 394.96544,390.845627 C482.26164,398.663898 547.408308,379.118221 569.55784,274.875879 C591.707372,170.632775 459.834648,-17.0034408 310.135127,1.23868313 C160.43713,19.4808071 -55.7346168,183.501362 13.2057818,399.966689 C33.7637304,464.516975 126.560344,501.603449 186.495492,466.421992 Z" id="DESARROLLO-MOVIL" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>
