@@ -54,7 +54,7 @@ ul {
   list-style: none;
   padding: 0;
 }
-.HorizontalScrollContainer {
+#HorizontalScrollContainer {
   position: fixed;
   top: 0;
   white-space: nowrap;

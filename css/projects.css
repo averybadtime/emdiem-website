@@ -6,7 +6,6 @@
   overflow: hidden;
 }
 #Projects {
-  min-width: 100vw;
   position : relative;
   width    : 100vw;
 }
@@ -38,8 +37,10 @@
   width: 100%;
 }
 .fixed {
+  bottom: 0;
+  margin: auto;
   position: fixed;
-  top: -25vw !important;
+  top: -100vh;
 }
 #Projects .Projects__Item {
   align-items    : center;
@@ -51,14 +52,16 @@
   z-index        : 2;
 }
 #Projects .Projects__Item .label {
+  
   align-items: center;
   color: #ffffff;
   display: flex;
   font-size: 36px;
   font-weight: 900;
   position: absolute;
-  right: -200px;
+  right: 0px;
   top: 10vh;
+  width: 200px;
   z-index: 999;
 }
 #Projects .Projects__Item .label img {
@@ -123,11 +126,11 @@
   bottom  : 0;
   height  : auto;
   position: absolute;
-  width   : 100%;
+  width   : 80%;
 }
 /* Transmetro */
 #Projects .Projects__Item .project-device-with-shape.transmetro .device {
-  height: 100% !important;
+  height: 70% !important;
   top: 0;
   width: auto;
 }
@@ -154,29 +157,31 @@
 /* Colmed */
 #Projects .Projects__Item .project-device-with-shape.colmed .device {
   bottom      : -5% !important;
-  margin-right: 5% !important;
 }
 #Projects .Projects__Item .project-device-with-shape.colmed .boxes {
-  position : relative;
+  bottom: 0;
+  margin: auto;
   max-width: 20%;
   opacity  : .25;
+  position : absolute;
 }
 #Projects .Projects__Item .project-device-with-shape.colmed .box-1 {
-  right    : -270px;
-  top      : -110px;
+  left: 40%;
+  right: 0;
+  top: -60%;
   transform: rotate(-90deg);
 }
 #Projects .Projects__Item .project-device-with-shape.colmed .box-2 {
-  bottom   : -90px;
-  left     : -200px;
+  bottom: 10%;
+  left: 0;
+  right: 40%;
   transform: rotate(90deg);
 }
 /** GSP */
 #Projects .Projects__Item .project-device-with-shape.gsp .device {
-  height: auto !important;
-  max-width: 500px;
+  height: 70% !important;
   top   : 0;
-  width : 100%;
+  width : auto;
 }
 /** Tránsito de Barranquilla */
 #Projects .Projects__Item .project-device-with-shape.transito .video {
@@ -200,8 +205,11 @@
 #Projects .Projects__Item .project-device-with-shape.olimpica .device {
   bottom    : 0;
   height    : 100%;
+  left: 0;
   margin    : auto;
   max-height: 60vh;
   position  : absolute;
+  right: 0;
+  top: 0;
   z-index   : 99;
 }
