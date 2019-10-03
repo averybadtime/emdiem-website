@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>EMDIEM - Laboratorio creativo | Inicio</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/animate.css">
   <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/css/utils.css">
   <link rel="stylesheet" href="/css/projects.css">
@@ -18,25 +19,22 @@
   <style>
     body {
       height: 100vh;
-      /* height: 100%; */
       margin: 0;
       padding: 0;
       width: 100vw;
     }
     #container {
       height: calc(100vh + 1px);
-      /* height: 100%; */
       overflow: auto;
     }
     #HorizontalScrollContainer {
       display: flex;
-      /* height: 100%; */
       height: auto;
       position: fixed;
       white-space: nowrap;
     }
     #VerticalContainer {
-      background: linear-gradient(to bottom, #00a0f5 50%, #0055bf);
+      background: linear-gradient(to bottom, #00a0f5, #0055bf);
       background-attachment: fixed;
       overflow: hidden scroll;
       position: relative;
@@ -65,22 +63,21 @@
       </div>
       <ul class="Navigation">
         <li>
-          <a href="#!">Inicio</a>
+          <a data-scroll-to="Index" href="javascript:void(0)">Inicio</a>
         </li>
         <li>
-          <a href="#!">Qué hacemos</a>
+          <a data-scroll-to="WhatWeDo" href="javascript:void(0)">Qué hacemos</a>
         </li>
         <li>
-          <a href="#!">Trabajos</a>
+          <a data-scroll-to="Projects" href="javascript:void(0)">Trabajos</a>
         </li>
         <li>
-          <a class="LetsDoIt" href="#!">¡Hagámoslo!</a>
+          <a data-scroll-to="Contact" class="LetsDoIt" href="javascript:void(0)">¡Hagámoslo!</a>
         </li>
       </ul>
     </nav>
     <div id="HorizontalScrollContainer">
-     
-      <div class="Page Page__Index">
+      <div id="Index" class="Page Page__Index">
         <img src="/assets/img/projects/dot.svg" alt="Dot planet somewhere in space" class="dot-planet planet-1 blur">
         <img src="/assets/img/projects/dot.svg" alt="Dot planet somewhere in space" class="dot-planet planet-2">
         <img src="/assets/img/projects/dot.svg" alt="Dot planet somewhere in space" class="dot-planet planet-3 blur">
@@ -93,9 +90,9 @@
           </div>
         </div>
         <!-- Floating people -->
-        <img src="/assets/svg/HOME/PERSON1.svg" alt="Floating person 1" class="Person--floating Person--floating-1">
-        <img src="/assets/svg/HOME/PERSON2.svg" alt="Floating person 2" class="Person--floating Person--floating-2">
-        <img src="/assets/svg/HOME/PERSON3.svg" alt="Floating person 3" class="Person--floating Person--floating-3">
+        <img src="/assets/svg/HOME/PERSON1.svg" alt="Floating person 1" class="Person--floating Person--floating-1 animated slideInUp">
+        <img src="/assets/svg/HOME/PERSON2.svg" alt="Floating person 2" class="Person--floating Person--floating-2 animated slideInDown">
+        <img src="/assets/svg/HOME/PERSON3.svg" alt="Floating person 3" class="Person--floating Person--floating-3 animated slideInUp">
         <!-- End floating people -->
         <div class="social-media">
           <ul>
@@ -129,7 +126,7 @@
           <img src="assets/img/scroll-down.svg" alt="scroll down icon">
         </div>
       </div>
-      <div class="Page Page__WhatWeDo">
+      <div id="WhatWeDo" class="Page Page__WhatWeDo">
         <img src="/assets/img/projects/dot.svg" alt="Dot planet somewhere in space" class="dot-planet planet-5">
         <div class="what-we-do__header">
           <h1 class="header">Qué hacemos</h1>
@@ -193,7 +190,7 @@
               <div class="simple-text">Desarrollamos increibles aplicaciones moviles nativas en iOS, Android e hibridas.</div>
             </div>
           </div>
-          <img src="/assets/svg/PLANETS/PLANETA.svg" alt="Random planet" class="random-planet planet-3">
+          <img src="/assets/svg/PLANETS/PLANETA.svg" alt="Random planet" class="random-planet planet-3 blur">
           <div class="item v-align-top">
             <div class="service web-development">
               <img src="assets/svg/DESARROLLO WEB/FONDO AZUL.svg" alt="blue">
@@ -231,10 +228,7 @@
           </div>
         </div>
       </div>
-      
-
       <div id="VerticalContainer">
-        
         <div id="Projects">
           <!-- Fixed text -->
           <!-- <div class="fixed">
@@ -324,11 +318,6 @@
           </div>
           <!-- Olímpica -->
           <div class="Projects__Item">
-            <!-- <div class="fixed-inside">
-              OLÍMPICA
-              <br>
-              STEREO
-            </div> -->
             <div class="project-device-with-shape olimpica">
               <div class="label">
                 <img src="assets/img/projects/dot.svg" alt="Olímpica Estéreo">
@@ -352,10 +341,8 @@
             <li><img src="/assets/img/customers/Alcaldia.svg" alt="Alcaldía de Barranquilla"></li>
           </ul>
         </div>
-        
         <div style="background: url('/assets/svg/CONTACTO/fondo 2.svg'); background-repeat: no-repeat;"></div>
-
-        <div id="content" style="position: relative; background: white;">
+        <div id="Contact" style="position: relative; background: white;">
           <footer>
             <div class="Footer__Content">
               <div class="Contact__About">
@@ -402,39 +389,94 @@
         </div>
       </div>
     </div>
-
   </div>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/app.js"></script>
   <script>
-    $.fn.parallax = function () {
-      $(this).each(function(index, element) {
-        const objectElement = $(element)
-        document.addEventListener("scroll", function() {
-          const left = parseInt(objectElement.css("left"))
-          const scrollTop = $(document).scrollTop()
-          if (left >= scrollTop) {
-            objectElement.css("marginLeft", (scrollTop * .25) * -1)
+    $.fn.projects = function() {
+      const _this = this
+      document.addEventListener("scroll", function () {
+        _this.each(function(index, element) {
+          const $element = $(element)
+          $element.children().each(function(childIndex, childElement) {
+            const
+              $childElement  = $(childElement),
+              offset         = $childElement.offset().top - $(window).scrollTop() - 61,
+              projectWrapper = $childElement.children(),
+              projectFigures = projectWrapper.children(),
+              figure         = projectFigures.siblings("img.figure"),
+              device         = projectFigures.siblings("img.device"),
+              video          = projectFigures.siblings("img.video")
+            if (offset > 0) {
+              $(figure).css("paddingRight", offset)
+              $(device).css("paddingLeft", offset)
+              $(video).css("left", offset)
+            } else {
+              $(figure).css("paddingRight", 0)
+              $(device).css("paddingLeft", 0)
+              $(video).css("left", 0)
+            }
+          })
+        })
+      })
+      return this
+    }
+    $.fn.navigation = function() {
+      const _this = this
+      document.addEventListener("scroll", function() {
+        const navigation = _this.find("ul.Navigation")
+        navigation.children().each(function(index, element) {
+          const $menuItem = $(element)
+          const $anchor = $menuItem.children("a")
+          const sectionName = $anchor.data("scroll-to")
+          const sectionScrollTop = $(`#${sectionName}`)
+          // console.log($(window).scrollTop(), Math.round(sectionScrollTop.offset().top), sectionScrollTop.offset().left)
+        })
+        return this
+      })
+    }
+    $.fn.animatePlanets = function() {
+      const _this = this
+      document.addEventListener("scroll", function() {
+        const scrollLeft = parseInt($("#HorizontalScrollContainer").css("left"))
+        _this.each(function(index, element) {
+          const
+            $element         = $(element),
+            left             = Math.round($element.offset().left),
+            far              = $element.hasClass("blur") ? true : false,
+            translationValue = far ? 9 : 3
+          // TODO: Se rompe al cargar la página
+          $element.css("marginLeft", (left / translationValue))
+        })
+      })
+      return this
+    }
+    $.fn.animateServices = function() {
+      const _this = this
+      document.addEventListener("scroll", function() {        
+        _this.each(function(index, element) {
+          const $element = $(element)
+          const offsetLeft = Math.round($element.offset().left)
+          const left = parseInt($("#HorizontalScrollContainer").css("left")) * -1
+          const onePageThird = Math.round($(window).width() / 3)
+          const valueToStartAnimation = offsetLeft + left + onePageThird
+          const windowWidth = $(window).width()
+          const header = $(".what-we-do__header").width()
+          if (index == 3) {
+            console.log(left, offsetLeft)
+            if (left >= offsetLeft) {
+              $element.addClass("animated slideInDown")
+            }
           }
         })
       })
       return this
     }
     $(document).ready(function() {
-
-      const device = $("#Projects .Projects__Item .project-device-with-shape.carnaval .device")
-      const graphic = $("#Projects .Projects__Item .project-device-with-shape.carnaval .figure")
-      device.css("left", $("body").width() / 2)
-      graphic.css("right", $("body").width() / 2)
-      // $(".dot-planet").parallax()
-      // $(".random-planet").scrollLeft()
-      // const planets = $(".dot-planet")
-      // for (const planet of planets) {
-      //   const elPlanet = $(planet)
-      //   console.log(elPlanet.css("left"))
-      // }
-      // document.addEventListener("scroll", _ => {
-      // })
+      $("#Projects").projects()
+      $(".TopNav").navigation()
+      $(".dot-planet, .random-planet").animatePlanets()
+      $(".what-we-do__services .item").animateServices()
     })
   </script>
 </body>

@@ -32,19 +32,5 @@ $(document).ready(function () {
     } else {
       nav.removeClass("light-bg")
     }
-    const projects = $("#Projects")
-    const horizontalScrollContainerLeft = parseInt(horizontalScrollContainer.css("left")) * -1
-    const verticalContainerTop = parseInt(verticalContainer.css("top")) * -1
-    const total = horizontalScrollContainerLeft + verticalContainerTop
-    const projectsHeight = $("#Projects").height()
-    const middle = Math.round((projectsHeight / 16))
-    // console.log(horizontalScrollContainerLeft, verticalContainerTop, documentScrollTop, middle)
-    if (horizontalScrollContainerLeft + middle < documentScrollTop) {
-      const number = (documentScrollTop - horizontalScrollContainerLeft - middle) * -1
-      const device = $("#Projects .Projects__Item .project-device-with-shape.carnaval .device")
-      const ok = parseInt(device.css("left")) + number
-      console.log(ok)
-      device.css("left", ok)
-    }
   })
 })

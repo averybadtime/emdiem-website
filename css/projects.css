@@ -6,6 +6,7 @@
   overflow: hidden;
 }
 #Projects {
+  padding-top: 61px;
   position : relative;
   width    : 100vw;
 }
@@ -125,7 +126,10 @@
 #Projects .Projects__Item .project-device-with-shape.carnaval .figure {
   bottom  : 0;
   height  : auto;
+  left: 0;
+  margin: auto;
   position: absolute;
+  right: 0;
   width   : 80%;
 }
 /* Transmetro */
@@ -191,6 +195,7 @@
   max-height: 60vh;
   max-width : 600px;
   position  : absolute;
+  right: 0;
   top       : 0;
   width     : 80%;
 }
