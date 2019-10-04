@@ -23,9 +23,9 @@
   width    : 100%;
 }
 .Page.Page__Portal.out .Portal {
-  height: 100vh;
+  height  : 100vh;
   position: relative;
-  z-index: 1;
+  z-index : 1;
 }
 .Page.Page__Portal.out .Portal-mask {
   height  : 100vh;
@@ -39,7 +39,7 @@
   position : absolute;
   transform: translate(0, -30%) scale(.6);
   width    : 100%;
-  z-index: 1;
+  z-index  : 1;
 }
 .animate__Portal-guy__in {
   animation: portal-guy-in 4s forwards ease-out 1s;

@@ -1,70 +1,55 @@
-#FlexRowContainer {
-  display   : flex;
-  margin-top: 61px;
-}
-#FlexRowContainer .VerticalContainer {
-  overflow: hidden;
-}
 #Projects {
   padding-top: 61px;
-  position : relative;
-  width    : 100vw;
-}
-#Projects .planets {
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-}
-#Projects .planets img {
-  max-width: 100px;
-}
-#Projects .planets img:first-child {
-  animation: infrastructure-planet 45s infinite ease-in-out;
-  left: -20vw;
-  max-width: 25%;
-  position: relative;
-  width: 100%;
-}
-#Projects .planets img:last-child {
-  animation: floatingInSpace 4s infinite ease-in-out;
-  left: -80vw;
-  max-width: 17.5%;
-  position: relative;
-  bottom: -60vh;
-  width: 100%;
+  position   : relative;
+  width      : 100vw;
 }
 #Projects .Projects__Item {
   align-items    : center;
   display        : flex;
   height         : calc(100vh - 61px);
   justify-content: center;
+  padding: 10vh 10vw;
   position       : relative;
   width          : 100%;
   z-index        : 2;
 }
-#Projects .Projects__Item .label {
+#Projects .Projects__Item:nth-child(1) {
   
+}
+#Projects .Projects__Item:nth-child(odd) {
+  background-image: url("/assets/img/projects/divider.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Projects .Projects__Item:nth-child(odd) .label {
+  color: #000000;
+}
+#Projects .Projects__Item:nth-child(odd) .project-description {
+  color: #000000;
+}
+#Projects .Projects__Item > div {
+  width: 50vw;
+}
+#Projects .Projects__Item .label {
   align-items: center;
-  color: #ffffff;
-  display: flex;
-  font-size: 36px;
+  color      : #ffffff;
+  display    : flex;
+  font-size  : 36px;
   font-weight: 900;
-  position: absolute;
-  right: 0px;
-  top: 10vh;
-  width: 200px;
-  z-index: 999;
+  line-height: 1;
+  max-width: 75%;
+  padding-bottom: 18px;
 }
 #Projects .Projects__Item .label img {
   margin-right: 12px;
-  max-width: 40px;
+  max-width   : 40px;
 }
 #Projects .Projects__Item .project-device-with-shape {
   position: relative;
+}
+#Projects .Projects__Item .project-description {
+  color: #ffffff;
+  padding: 0 24px;
 }
 .projects-title {
   color      : white;
@@ -120,28 +105,28 @@
 #Projects .Projects__Item .project-device-with-shape.carnaval .figure {
   bottom  : 0;
   height  : auto;
-  left: 0;
-  margin: auto;
+  left    : 0;
+  margin  : auto;
   position: absolute;
-  right: 0;
+  right   : 0;
   width   : 80%;
 }
 /* Transmetro */
 #Projects .Projects__Item .project-device-with-shape.transmetro .device {
   height: 70% !important;
-  top: 0;
-  width: auto;
+  top   : 0;
+  width : auto;
 }
 /* Procaps */
 #Projects .Projects__Item .project-device-with-shape.procaps .video {
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  bottom   : 0;
+  left     : 0;
+  margin   : auto;
   max-width: 600px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 75%;
+  position : absolute;
+  right    : 0;
+  top      : 0;
+  width    : 75%;
 }
 #Projects .Projects__Item .project-device-with-shape.procaps .superhero {
   bottom   : 10%;
@@ -149,30 +134,30 @@
   max-width: 250px;
   position : absolute;
   transform: translateX(-50%);
-  width: 30%;
+  width    : 30%;
   z-index  : 5;
 }
 /* Colmed */
 #Projects .Projects__Item .project-device-with-shape.colmed .device {
-  bottom      : -5% !important;
+  bottom: -5% !important;
 }
 #Projects .Projects__Item .project-device-with-shape.colmed .boxes {
-  bottom: 0;
-  margin: auto;
+  bottom   : 0;
+  margin   : auto;
   max-width: 20%;
   opacity  : .25;
   position : absolute;
 }
 #Projects .Projects__Item .project-device-with-shape.colmed .box-1 {
-  left: 40%;
-  right: 0;
-  top: -60%;
+  left     : 40%;
+  right    : 0;
+  top      : -60%;
   transform: rotate(-90deg);
 }
 #Projects .Projects__Item .project-device-with-shape.colmed .box-2 {
-  bottom: 10%;
-  left: 0;
-  right: 40%;
+  bottom   : 10%;
+  left     : 0;
+  right    : 40%;
   transform: rotate(90deg);
 }
 /** GSP */
@@ -188,8 +173,8 @@
   margin    : auto;
   max-height: 60vh;
   max-width : 600px;
-  position  : absolute;
-  right: 0;
+  position  : relative;
+  right     : 0;
   top       : 0;
   width     : 80%;
 }
@@ -204,11 +189,11 @@
 #Projects .Projects__Item .project-device-with-shape.olimpica .device {
   bottom    : 0;
   height    : 100%;
-  left: 0;
+  left      : 0;
   margin    : auto;
   max-height: 60vh;
   position  : absolute;
-  right: 0;
-  top: 0;
+  right     : 0;
+  top       : 0;
   z-index   : 99;
 }

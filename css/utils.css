@@ -12,6 +12,7 @@
   display : flex;
   height  : 100%;
   position: relative;
+  z-index: 999;
 }
 .what-we-do__services .item {
   align-items       : center;
@@ -46,8 +47,8 @@
   letter-spacing: .67px;
   line-height   : 37px;
 }
-.what-we-do__services .item: nth-of-type(1) .item-description > div,
-.what-we-do__services .item: nth-of-type(4) .item-description > div {
+.what-we-do__services .item:nth-of-type(1) .item-description > div,
+.what-we-do__services .item:nth-of-type(4) .item-description > div {
   max-width: 270px;
 }
 .what-we-do__services .item:nth-of-type(2) .item-description > div {

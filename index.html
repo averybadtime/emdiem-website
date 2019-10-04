@@ -16,42 +16,6 @@
   <link rel="stylesheet" href="css/customers.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/queries.css">
-  <style>
-    body {
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-    }
-    #container {
-      height: calc(100vh + 1px);
-      overflow: auto;
-    }
-    #HorizontalScrollContainer {
-      display: flex;
-      height: auto;
-      position: fixed;
-      white-space: nowrap;
-    }
-    #VerticalContainer {
-      background: linear-gradient(to bottom, #00a0f5, #0055bf);
-      background-attachment: fixed;
-      overflow: hidden scroll;
-      position: relative;
-    }
-    .globe {
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: bottom;
-      margin: 0 -10%;
-      padding: 0 10% 10px;
-    }
-    .deep-space {
-      background: #1b1b25;
-      height: 100vh;
-      width: 50vw;
-    }
-  </style>
 </head>
 <body>
   <div id="container">
@@ -129,7 +93,6 @@
       <div id="WhatWeDo" class="Page Page__WhatWeDo">
         <img src="assets/img/projects/dot.svg" alt="Dot planet somewhere in space" class="dot-planet planet-5">
         <div class="what-we-do__header">
-          <h1 class="header">Qué hacemos</h1>
           <div class="simple-text what-we-do">Creamos soluciones. Nuestros productos se diseñan y se desarrollan cuidadosamente para satisfacer al usuario final.</div>
           <img src="assets/svg/PLANETS/PLANETA.svg" alt="Random planet" class="random-planet">
         </div>
@@ -230,8 +193,9 @@
       </div>
       <div id="VerticalContainer">
         <div id="Projects">
+          <!-- Inicio de los proyectos -->
           <div class="Projects__Item">
-            <div class="project-device-with-shape carnaval">
+            <div class="project-device-with-shape">
                 <div class="label">
                   <img src="assets/img/projects/dot.svg" alt="Carnaval de Barranquilla">
                   PROYECTOS
@@ -240,34 +204,49 @@
           </div>
           <!-- Carnaval -->
           <div class="Projects__Item">
-            <div class="project-device-with-shape carnaval">
-                <div class="label">
-                  <img src="assets/img/projects/dot.svg" alt="Carnaval de Barranquilla">
-                  Carnaval de Barranquilla
-                </div>
+            <div class="project-description">
+              <div class="label">
+                <img src="assets/img/projects/dot.svg" alt="Carnaval de Barranquilla">
+                Carnaval de Barranquilla
+              </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quibusdam esse quae sit, eos laudantium molestias dolores omnis, reprehenderit mollitia aliquam aspernatur dolore labore distinctio accusamus, nobis quo dignissimos.
+              </div>
+            </div>
+            <div class="project-device-with-shape carnaval enterFromRight">
               <img src="assets/img/projects/Carnaval/grafismo carnaval.png" alt="project background" class="figure">
               <img src="assets/img/projects/Carnaval/device.png" alt="Carnaval" class="device">
             </div>
           </div>
           <!-- Transmetro -->
           <div class="Projects__Item">
-            <div class="project-device-with-shape transmetro">
-              <div class="label">
-                <img src="assets/img/projects/dot.svg" alt="Transmetro">
-                Transmetro
-              </div>
+            <div class="project-device-with-shape transmetro enterFromLeft">
               <img src="assets/img/projects/Transmetro/device.png" alt="Transmetro" class="device">
               <img src="assets/svg/PROJECTS/Transmetro 1.svg" alt="Logo Transmetro" style="max-height: 40vh; position: relative; top: 10%; left: -30%; z-index: 0; width: 100%; transform: scale(1.4); transform-origin: top;" class="figure-1">
               <img src="assets/svg/PROJECTS/Transmetro 2.svg" alt="Logo Transmetro" style="max-height: 40vh; position: absolute; top: 25%; right: -30%; z-index: 0; width: 100%; transform: scale(1.4); transform-origin: top;" class="figure-">
             </div>
+            <div class="project-description">
+              <div class="label">
+                <img src="assets/img/projects/dot.svg" alt="Transmetro">
+                Transmetro
+              </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quibusdam esse quae sit, eos laudantium molestias dolores omnis, reprehenderit mollitia aliquam aspernatur dolore labore distinctio accusamus, nobis quo dignissimos.
+              </div>
+            </div>
           </div>
           <!-- Procaps -->
           <div class="Projects__Item">
-            <div class="project-device-with-shape procaps">
+            <div class="project-description">
               <div class="label">
                 <img src="assets/img/projects/dot.svg" alt="Super E Procaps">
                 Super E Procaps
               </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quibusdam esse quae sit, eos laudantium molestias dolores omnis, reprehenderit mollitia aliquam aspernatur dolore labore distinctio accusamus, nobis quo dignissimos.
+              </div>
+            </div>
+            <div class="project-device-with-shape procaps enterFromRight">
               <img src="assets/img/projects/Procaps/video.png" alt="Animated video" class="video">
               <img src="assets/img/projects/Procaps/superhero.png" alt="Superhero" class="superhero">
             </div>
@@ -275,42 +254,62 @@
           <!-- Colmed -->
           <div class="Projects__Item">
             <div class="project-device-with-shape colmed">
-              <div class="label">
-                <img src="assets/img/projects/dot.svg" alt="Colmed">
-                Colmed
-              </div>
               <img src="assets/img/projects/Colmed/device.png" alt="Colmed" class="device">
               <img src="assets/img/projects/Colmed/boxes.svg" alt="Colmed" class="boxes box-1">
               <img src="assets/img/projects/Colmed/boxes.svg" alt="Colmed" class="boxes box-2">
             </div>
+            <div class="project-description enterFromLeft">
+              <div class="label">
+                <img src="assets/img/projects/dot.svg" alt="Colmed">
+                Colmed
+              </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quibusdam esse quae sit, eos laudantium molestias dolores omnis, reprehenderit mollitia aliquam aspernatur dolore labore distinctio accusamus, nobis quo dignissimos.
+              </div>
+            </div>
           </div>
           <!-- GSP -->
           <div class="Projects__Item">
-            <div class="project-device-with-shape gsp">
+            <div class="project-description">
               <div class="label">
                 <img src="assets/img/projects/dot.svg" alt="GSP">
                 GSP
               </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quibusdam esse quae sit, eos laudantium molestias dolores omnis, reprehenderit mollitia aliquam aspernatur dolore labore distinctio accusamus, nobis quo dignissimos.
+              </div>
+            </div>
+            <div class="project-device-with-shape gsp enterFromRight">
               <img src="assets/img/projects/gsp/device.png" alt="GSP" class="device">
             </div>
           </div>
           <!-- Tránsito de Barranquilla -->
           <div class="Projects__Item">
-            <div class="project-device-with-shape transito">
+            <div class="project-device-with-shape transito enterFromLeft">
+              <img src="assets/img/projects/transito/video.png" alt="Tránsito de Barranquilla" class="video">
+            </div>
+            <div class="project-description">
               <div class="label">
                 <img src="assets/img/projects/dot.svg" alt="Tránsito Alcaldía de Barranquilla">
                 Tránsito Alcaldía de Barranquilla
               </div>
-              <img src="assets/img/projects/transito/video.png" alt="Tránsito de Barranquilla" class="video">
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quibusdam esse quae sit, eos laudantium molestias dolores omnis, reprehenderit mollitia aliquam aspernatur dolore labore distinctio accusamus, nobis quo dignissimos.
+              </div>
             </div>
           </div>
           <!-- Olímpica -->
           <div class="Projects__Item">
-            <div class="project-device-with-shape olimpica">
+            <div class="project-description">
               <div class="label">
                 <img src="assets/img/projects/dot.svg" alt="Olímpica Estéreo">
                 Olímpica Estéreo
               </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quia quibusdam esse quae sit, eos laudantium molestias dolores omnis, reprehenderit mollitia aliquam aspernatur dolore labore distinctio accusamus, nobis quo dignissimos.
+              </div>
+            </div>
+            <div class="project-device-with-shape olimpica enterFromRight">
               <!-- <img src="assets/svg/PROJECTS/CORTADAS.svg" alt="Olímpica" class="waves"> -->
               <img src="assets/svg/PROJECTS/OLIMPICA.png" alt="Logo Transmetro" class="device">
             </div>
@@ -380,94 +379,5 @@
   </div>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/app.js"></script>
-  <script>
-    $.fn.projects = function() {
-      const _this = this
-      document.addEventListener("scroll", function () {
-        _this.each(function(index, element) {
-          const $element = $(element)
-          $element.children().each(function(childIndex, childElement) {
-            const
-              $childElement  = $(childElement),
-              offset         = $childElement.offset().top - $(window).scrollTop() - 61,
-              projectWrapper = $childElement.children(),
-              projectFigures = projectWrapper.children(),
-              figure         = projectFigures.siblings("img.figure"),
-              device         = projectFigures.siblings("img.device"),
-              video          = projectFigures.siblings("img.video")
-            if (offset > 0) {
-              $(figure).css("paddingRight", offset)
-              $(device).css("paddingLeft", offset)
-              $(video).css("left", offset)
-            } else {
-              $(figure).css("paddingRight", 0)
-              $(device).css("paddingLeft", 0)
-              $(video).css("left", 0)
-            }
-          })
-        })
-      })
-      return this
-    }
-
-    $.fn.navigation = function() {
-      const _this = this
-      document.addEventListener("scroll", function() {
-        const navigation = _this.find("ul.Navigation")
-        navigation.children().each(function(index, element) {
-          const $menuItem = $(element)
-          const $anchor = $menuItem.children("a")
-          const sectionName = $anchor.data("scroll-to")
-          const sectionScrollTop = $(`#${sectionName}`)
-          // console.log($(window).scrollTop(), Math.round(sectionScrollTop.offset().top), sectionScrollTop.offset().left)
-        })
-        return this
-      })
-    }
-
-    $.fn.animatePlanets = function() {
-      const _this = this
-      document.addEventListener("scroll", function() {
-        const scrollLeft = parseInt($("#HorizontalScrollContainer").css("left"))
-        _this.each(function(index, element) {
-          const
-            $element         = $(element),
-            offsetLeft             = Math.round($element.offset().left),
-            far              = $element.hasClass("blur") ? true : false,
-            translationValue = far ? 9 : 3
-          // TODO: Se rompe al cargar la página
-          // $element.css("marginLeft", (offsetLeft / translationValue))
-          $element.css("marginLeft", (offsetLeft / translationValue))
-        })
-      })
-      return this
-    }
-
-    $.fn.animateServices = function() {
-      const _this = this
-      _this.css("opacity", 0)
-      document.addEventListener("scroll", function() {        
-        _this.each(function(index, element) {
-          const
-            $element     = $(element),
-            offsetLeft   = Math.round($element.offset().left),
-            onePageThird = Math.round($(window).width() / 3),
-            windowWidth  = $(window).width()
-          if (offsetLeft <= (windowWidth - onePageThird)) {
-            element.classList.add("animated", "slideInRight")
-            $element.css("opacity", 1)
-          }
-        })
-      })
-      return this
-    }
-
-    $(document).ready(function() {
-      $("#Projects").projects()
-      $(".TopNav").navigation()
-      $(".dot-planet, .random-planet").animatePlanets()
-      $(".what-we-do__services .item").animateServices()
-    })
-  </script>
 </body>
 </html>

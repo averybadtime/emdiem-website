@@ -35,14 +35,6 @@
   .Page.Page__Index .scroll-down img {
     max-width: 35px;
   }
-  .Page.Page__WhatWeDo h1.header {
-    font-size: 120px;
-    line-height: 100px;
-    letter-spacing: 1px;
-    position: relative;
-    left: -23px;
-    max-width: 510px;
-  }
   .Page.Page__WhatWeDo .what-we-do {
     font-size: 18px;
     letter-spacing: .5px;
