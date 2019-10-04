@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>EMDIEM - Laboratorio creativo | Inicio</title>
-  <link href="https://fonts.googleapis.comcss?family=Raleway:300,400,600,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/utils.css">
@@ -149,9 +149,9 @@
               <h5 class="title">Diseño ux/ui</h5>
               <div class="simple-text">Diseñamos nuestras apps móvil y web para que sean rápidas e intuitivas.</div>
             </div>
-            <img src="assets/svg/UX:UI/FONDO UXUI.svg" alt="blue" class="out-splash-blue out-splash-blue-1">
-            <img src="assets/img/projects/dot.svg" alt="blue" class="dot-planet planet-7 blur">
           </div>
+          <img src="assets/img/projects/dot.svg" alt="blue" class="dot-planet planet-7 blur">
+          <img src="assets/svg/UX:UI/FONDO UXUI.svg" alt="blue" class="out-splash-blue out-splash-blue-1">
           <div class="item v-align-bottom">
             <div class="service animation">
               <img src="assets/svg/ANIMACION/1. FONDO AZUL.svg" alt="blue">
@@ -230,18 +230,6 @@
       </div>
       <div id="VerticalContainer">
         <div id="Projects">
-          <!-- Fixed text -->
-          <!-- <div class="fixed">
-            <div class="projects-title">
-              Proyectos
-              <div class="caption-1">
-                Creamos arquitecturas y códigos escalables, estables y sencillos de mantener.
-              </div>
-              <div class="caption-2">
-                Estos son algunos de nuestros casos de éxito, en los que logramos llevar las ideas de nuestros clientes a la realidad.
-              </div>
-            </div>
-          </div> -->
           <div class="Projects__Item">
             <div class="project-device-with-shape carnaval">
                 <div class="label">
@@ -421,7 +409,7 @@
       })
       return this
     }
-    
+
     $.fn.navigation = function() {
       const _this = this
       document.addEventListener("scroll", function() {
@@ -444,11 +432,12 @@
         _this.each(function(index, element) {
           const
             $element         = $(element),
-            left             = Math.round($element.offset().left),
+            offsetLeft             = Math.round($element.offset().left),
             far              = $element.hasClass("blur") ? true : false,
             translationValue = far ? 9 : 3
           // TODO: Se rompe al cargar la página
-          $element.css("marginLeft", (left / translationValue))
+          // $element.css("marginLeft", (offsetLeft / translationValue))
+          $element.css("marginLeft", (offsetLeft / translationValue))
         })
       })
       return this
@@ -456,25 +445,28 @@
 
     $.fn.animateServices = function() {
       const _this = this
+      _this.css("opacity", 0)
       document.addEventListener("scroll", function() {        
         _this.each(function(index, element) {
-          const $element = $(element)
-          const offsetLeft = Math.round($element.offset().left)
-          const left = parseInt($("#HorizontalScrollContainer").css("left")) * -1
-          const onePageThird = Math.round($(window).width() / 3)
-          const valueToStartAnimation = offsetLeft + left + onePageThird
-          const windowWidth = $(window).width()
-          const header = $(".what-we-do__header").width()
-          console.log("im here!")
+          const
+            $element     = $(element),
+            offsetLeft   = Math.round($element.offset().left),
+            onePageThird = Math.round($(window).width() / 3),
+            windowWidth  = $(window).width()
+          if (offsetLeft <= (windowWidth - onePageThird)) {
+            element.classList.add("animated", "slideInRight")
+            $element.css("opacity", 1)
+          }
         })
       })
       return this
     }
+
     $(document).ready(function() {
       $("#Projects").projects()
       $(".TopNav").navigation()
-      $(".dot-planet, .random-planet, .item").animatePlanets()
-      // $(".what-we-do__services .item").animateServices()
+      $(".dot-planet, .random-planet").animatePlanets()
+      $(".what-we-do__services .item").animateServices()
     })
   </script>
 </body>

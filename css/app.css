@@ -142,6 +142,7 @@ ul {
   max-width: 150px;
   position : fixed;
   top      : 78%;
+  z-index: 1;
 }
 .dot-planet.planet-8 {
   left   : -75px;

@@ -37,12 +37,6 @@
   bottom: -60vh;
   width: 100%;
 }
-.fixed {
-  bottom: 0;
-  margin: auto;
-  position: fixed;
-  top: -100vh;
-}
 #Projects .Projects__Item {
   align-items    : center;
   display        : flex;

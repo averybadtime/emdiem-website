@@ -22,7 +22,7 @@
   height     : 300px;
   margin-left: 60px;
   width      : auto;
-  z-index: 1;
+  z-index    : 1;
 }
 .service.ui-ux .characters .man,
 .service.ui-ux .characters .girl {
@@ -34,20 +34,20 @@
   height   : 280px;
   right    : -120px;
   top      : 20px;
-  z-index: 2;
+  z-index  : 2;
 }
 .service.ui-ux .characters .girl {
-  bottom: 0;
-  height: 240px;
-  left  : -50px;
+  bottom : 0;
+  height : 240px;
+  left   : -50px;
   z-index: 1;
 }
 .service.ui-ux .characters .comet {
   animation: ui-ux-comet 4s infinite ease-in;
-  right: -200px;
-  top: 90px;
+  right    : -200px;
+  top      : 90px;
   transform: rotate(21deg);
-  width: 80px;
+  width    : 80px;
 }
 .service.animation .characters .screen {
   animation: floatingInSpace 3s infinite ease-in-out;
@@ -109,15 +109,15 @@
   width    : 200px;
 }
 .service.mobile-development .characters .man {
-  left : 70px;
-  top  : -130px;
-  width: 250px;
+  left   : 70px;
+  top    : -130px;
+  width  : 250px;
   z-index: 1;
 }
 .service.mobile-development .characters .girl {
-  left  : -140px;
-  bottom: -160px;
-  width : 140px;
+  left   : -140px;
+  bottom : -160px;
+  width  : 140px;
   z-index: 1;
 }
 .service.mobile-development .characters .mark {
@@ -131,15 +131,15 @@
   left     : 70px;
   bottom   : 0;
   width    : 50px;
-  z-index: 2;
+  z-index  : 2;
 }
 .service.mobile-development .characters .comet {
   animation: mobile-dev-comet 4s infinite ease-in;
-  right: -200px;
-  top: 90px;
+  right    : -200px;
+  top      : 90px;
   transform: rotate(21deg);
-  width: 80px;
-  z-index: 0;
+  width    : 80px;
+  z-index  : 0;
 }
 .service.web-development .characters .code {
   left     : 50%;
@@ -147,49 +147,49 @@
   bottom   : -20px;
   transform: translateX(-50%);
   width    : 380px;
-  z-index: 1;
+  z-index  : 1;
 }
 .service.web-development .characters .girl {
-  animation: floatingInSpace 6s infinite ease-in-out;
+  animation      : floatingInSpace 6s infinite ease-in-out;
   animation-delay: .5s;
-  left     : -35px;
-  bottom   : -8px;
-  width    : 100px;
-  z-index: 2;
+  left           : -35px;
+  bottom         : -8px;
+  width          : 100px;
+  z-index        : 2;
 }
 .service.web-development .characters .man {
   animation: floatingInSpace 6s infinite ease-in-out;
   right    : -68px;
   top      : -10px;
   width    : 140px;
-  z-index: 2;
+  z-index  : 2;
 }
 .service.web-development .characters .comet {
   animation: web-dev-comet 4s infinite ease-in;
-  right: 70px;
-  top: -50px;
+  right    : 70px;
+  top      : -50px;
   transform: rotate(4deg);
-  width: 80px;
-  z-index: 0;
+  width    : 80px;
+  z-index  : 0;
 }
 .service.infrastructure .characters .guy {
   animation: floatingInSpace 5s infinite ease-in-out;
   position : relative;
-  top   : 40px;
+  top      : 40px;
   width    : 350px;
-  z-index: 2;
+  z-index  : 2;
 }
 .service.infrastructure .characters .planet {
   animation: infrastructure-planet 10s infinite ease-in-out;
   left     : 70px;
-  top   : 20px;
+  top      : 20px;
   transform: translateX(-50%);
   width    : 70px;
 }
 .service.infrastructure .characters .comet {
   animation: infrastructure-comet 4s infinite ease-in;
-  right: -90px;
-  top: -50px;
+  right    : -90px;
+  top      : -50px;
   transform: rotate(-6deg);
-  width: 80px;
+  width    : 80px;
 }
