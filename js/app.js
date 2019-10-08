@@ -1,3 +1,4 @@
+let currentScrollTop
 $.fn.projects = function() {
   const _this = this
   document.addEventListener("scroll", function () {
@@ -9,21 +10,20 @@ $.fn.projects = function() {
           offset         = $childElement.offset().top - $(window).scrollTop() - 61,
           projectWrapper = $childElement.children(),
           projectFigures = projectWrapper.children()
-        
         const
           shape  = projectWrapper.siblings(".project-device-with-shape"),
           device = projectFigures.closest("img, video"),
           sign   = $(shape).hasClass("enterFromRight") ? "+" : "-"
-
-
         const pull = offset > 0
-        $(device).css("transform", pull ? `translateX(${sign}${offset}px)` : "translateX(0)")
-
+        if (! device.hasClass("Portal__mask")) {
+          $(device).css("transform", pull ? `translateX(${sign}${offset}px)` : "translateX(0)")
+        }
       })
     })
   })
   return this
 }
+
 $.fn.navigation = function() {
   const _this = this
   document.addEventListener("scroll", function() {
@@ -38,6 +38,7 @@ $.fn.navigation = function() {
     return this
   })
 }
+
 $.fn.animatePlanets = function() {
   const _this = this
   document.addEventListener("scroll", function() {
@@ -53,6 +54,7 @@ $.fn.animatePlanets = function() {
   })
   return this
 }
+
 $.fn.animateServices = function() {
   const _this = this
   _this.css("opacity", 0)
@@ -71,12 +73,22 @@ $.fn.animateServices = function() {
   })
   return this
 }
+
+disableScroll = function() {
+  const x = window.scrollX
+  const y = window.scrollY
+  window.onscroll = function() { window.scrollTo(x, y) }
+}
+
+enableScroll = function() {
+  window.onscroll = function() {}
+}
+
 $(document).ready(function () {
   $("#Projects").projects()
   $(".TopNav").navigation()
   $(".dot-planet, .random-planet").animatePlanets()
   $(".what-we-do__services .item").animateServices()
-
   /** jQuery selectors */
   const body                      = $("body")
   const container                 = $("#container")
@@ -99,6 +111,27 @@ $(document).ready(function () {
       if (documentScrollTop + horizontalScrollContainerHeight > containerHeight) {
         const pullVerticalContainerTop = ((documentScrollTop - Math.round(containerHeight - horizontalScrollContainerHeight)) * -1)
         verticalContainer.css("top", pullVerticalContainerTop)
+        
+        /** One page scroll simulation */
+        const bodyHeight = body.height()
+        const halfBodyHeight = Math.round(bodyHeight / 2)
+        if (currentScrollTop == null) {
+          console.log("scrolling", documentScrollTop)
+          if (parseInt(verticalContainer.css("top")) < (halfBodyHeight * -1)) {
+            currentScrollTop = documentScrollTop
+            const left = parseInt(horizontalScrollContainer.css("left")) * -1
+            const total = documentScrollTop - left + bodyHeight
+
+            disableScroll()
+
+            verticalContainer.animate({
+              top: (total * -1)
+            }, 750, function() {
+              enableScroll()
+              setTimeout(function() { currentScrollTop = null }, 750)
+            })
+          }
+        }
       }
     }
     /** Navigation */
@@ -109,17 +142,11 @@ $(document).ready(function () {
       nav.removeClass("light-bg")
     }
   })
-
-
-
   const background = $("#Index").children("img")
   const $element = $(background[4])
   const imageWidth = Math.round($element.width())
   const imageLeft = Math.round(parseInt($element.css("left")))
-
   const windowWidth = $(window).width()
-
+  // TODO: Hacer esto pero en el evento resize
   $("#WhatWeDo").css("paddingLeft", imageWidth + imageLeft - windowWidth)
-  console.log(imageWidth + imageLeft - windowWidth)
-  
 })
