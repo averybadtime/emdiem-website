@@ -26,8 +26,9 @@
 }
 #Projects .Projects__Item:nth-child(odd) {
   background-image : url("/assets/img/projects/divider.svg");
-  background-repeat: no-repeat;
-  background-size  : cover;
+  background-size  : contain;
+  height: 105vh;
+  z-index: 5;
 }
 #Projects .Projects__Item:nth-child(odd) .label {
   color: #333333;
@@ -69,6 +70,7 @@
 }
 #Projects .Projects__Item .project-description .text {
   font-size: 18px;
+  line-height: 1.5;
 }
 .projects-title {
   color      : white;

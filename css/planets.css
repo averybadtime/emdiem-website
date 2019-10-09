@@ -1,0 +1,54 @@
+.another-orbit {
+  max-width: 100vw;
+  position : absolute;
+  transform: rotate(-2deg);
+}
+.big-planet {
+  bottom   : -150px;
+  left     : -50px;
+  max-width: 300px;
+  position : absolute;
+}
+.colmed-dot-planet {
+  max-width: 60px;
+  position: absolute;
+  right: 15%;
+  top: 10%;
+}
+.colmed-planet {
+  bottom: 10vh;
+  max-width: 10vw;
+  position: absolute;
+  right: 35vw;
+}
+.orbit {
+  max-width: 100vw;
+  position : absolute;
+  transform: rotate(15deg);
+  z-index  : -1;
+}
+.procaps-dot-planet {
+  max-width: 50px;
+  position : absolute;
+  right    : 10vh;
+  top      : 30vh;
+}
+.procaps-planet {
+  filter: blur(7.5px);
+  left     : 15vh;
+  max-width: 250px;
+  position : absolute;
+  top      : 15vh;
+}
+.transmetro-planet {
+  max-width: 250px;
+  position : absolute;
+  right    : 10vh;
+  top      : 10vh;
+}
+.transmetro-dot-planet {
+  bottom   : 10vh;
+  filter   : blur(5px);
+  max-width: 100px;
+  position : absolute;
+}
