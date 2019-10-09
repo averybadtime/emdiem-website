@@ -1,14 +1,13 @@
 #Projects {
-  padding-top: 61px;
+  padding-top: 71px;
   position   : relative;
   width      : 100vw;
 }
 #Projects .Projects__Cover {
   align-self: baseline;
+  left: -1px;
+  position: relative;
   width: 40%;
-}
-#Projects .Portal__mask {
-  transform: rotate(-90deg);
 }
 #Projects .Projects__Item {
   align-items    : center;
@@ -31,10 +30,10 @@
   background-size  : cover;
 }
 #Projects .Projects__Item:nth-child(odd) .label {
-  color: #000000;
+  color: #333333;
 }
 #Projects .Projects__Item:nth-child(odd) .project-description {
-  color: #000000;
+  color: #333333;
 }
 #Projects .Projects__Item > div {
   width: 50vw;
@@ -46,19 +45,30 @@
   font-size     : 36px;
   font-weight   : 900;
   line-height   : 1;
+  margin-bottom: 12px;
   max-width     : 75%;
-  padding-bottom: 18px;
 }
 #Projects .Projects__Item .label img {
+  left: 34px;
   margin-right: 12px;
-  max-width   : 40px;
+  max-width   : 36px;
+  position: absolute;
 }
 #Projects .Projects__Item .project-device-with-shape {
   position: relative;
 }
 #Projects .Projects__Item .project-description {
   color  : #ffffff;
-  padding: 0 24px;
+  padding-left: 84px;
+  position: relative;
+}
+#Projects .Projects__Item .project-description .category {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+#Projects .Projects__Item .project-description .text {
+  font-size: 18px;
 }
 .projects-title {
   color      : white;
@@ -126,6 +136,25 @@
   top   : 0;
   width : auto;
 }
+#Projects .Projects__Item .project-device-with-shape.transmetro .figure {
+  max-height      : 40vh;
+  z-index         : 0;
+  width           : 100%;
+  transform       : scale(1.4);
+  transform-origin: top;
+}
+#Projects .Projects__Item .project-device-with-shape.transmetro .figure-1 {
+  position        : relative;
+  top             : 10%;
+  left            : -30%;
+  z-index         : 0;
+}
+#Projects .Projects__Item .project-device-with-shape.transmetro .figure-2 {
+  position        : absolute;
+  top             : 25%;
+  right           : -30%;
+  z-index         : 0;
+}
 /* Procaps */
 #Projects .Projects__Item .project-device-with-shape.procaps .video {
   bottom   : 0;
@@ -139,10 +168,11 @@
 }
 #Projects .Projects__Item .project-device-with-shape.procaps .superhero {
   bottom   : 10%;
-  left     : 50%;
+  left     : 0;
+  margin   : auto;
   max-width: 250px;
   position : absolute;
-  transform: translateX(-50%);
+  right    : 0;
   width    : 30%;
   z-index  : 5;
 }
@@ -161,13 +191,11 @@
   left     : 40%;
   right    : 0;
   top      : -60%;
-  transform: rotate(-90deg);
 }
 #Projects .Projects__Item .project-device-with-shape.colmed .box-2 {
   bottom   : 10%;
   left     : 0;
   right    : 40%;
-  transform: rotate(90deg);
 }
 /** GSP */
 #Projects .Projects__Item .project-device-with-shape.gsp .device {
@@ -188,8 +216,11 @@
   width     : 80%;
 }
 /** Olímpica */
-#Projects .Projects__Item .project-device-with-shape.olimpica .waves {
-  z-index: -1;
+#Projects .Projects__Item .waves {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
 }
 #Projects .Projects__Item .project-device-with-shape.carnaval .device,
 #Projects .Projects__Item .project-device-with-shape.transmetro .device,

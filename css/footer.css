@@ -1,3 +1,7 @@
+#Contact {
+  position: relative;
+  top: -4px;
+}
 footer {
   padding: 112px;
 }
@@ -32,13 +36,17 @@ footer {
   line-height: 30px;
 }
 .guy-floating-in-space {
-  animation: floatingInSpace 4s infinite ease-in-out;
+  animation: floatingInSpace 3s infinite ease-in-out;
   left: 0;
   margin: auto;
-  max-width: 200px;
   position: absolute;
   right: 0;
   top: 0;
+  width: 20%;
+}
+.Footer__Content .Contact__About,
+.Footer__Content .Contact__Form-section {
+  width: 40%;
 }
 .Footer__Content form {
   padding: 20px;

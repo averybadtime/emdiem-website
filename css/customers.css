@@ -1,5 +1,4 @@
 #Customers {
-  /* padding-bottom: 730px; */
   position: relative;
   z-index: 2;
 }
@@ -39,4 +38,8 @@
   margin: auto;
   max-width: 250px;
   width: 100%;
+}
+
+#Customers .cool-globe {
+  margin-top: -50vh;
 }

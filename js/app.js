@@ -1,4 +1,5 @@
 let currentScrollTop
+
 $.fn.projects = function() {
   const _this = this
   document.addEventListener("scroll", function () {
@@ -12,12 +13,20 @@ $.fn.projects = function() {
           projectFigures = projectWrapper.children()
         const
           shape  = projectWrapper.siblings(".project-device-with-shape"),
-          device = projectFigures.closest("img, video"),
+          device = projectFigures.closest("img.device, img.video"),
+          figure = projectFigures.closest("img.figure"),
+          figure2 = projectFigures.closest("img.figure-2"),
+          superhero = projectFigures.closest("img.superhero"),
           sign   = $(shape).hasClass("enterFromRight") ? "+" : "-"
+
         const pull = offset > 0
-        if (! device.hasClass("Portal__mask")) {
-          $(device).css("transform", pull ? `translateX(${sign}${offset}px)` : "translateX(0)")
-        }
+        
+        $(device).css("transform", pull ? `translateX(${sign}${offset/.75}px)` : "translateX(0)")
+        $(figure).css("transform", pull ? `translateX(${sign}${offset/1.25}px)` : "translateX(0)")
+        $(figure2).css("transform", pull ? `translateX(${sign}${offset/2.5}px)` : "translateX(0)")
+        $(superhero).css("transform", pull ? `translateX(-${offset}px)` : "translateX(0)")
+
+      
       })
     })
   })
@@ -77,11 +86,13 @@ $.fn.animateServices = function() {
 disableScroll = function() {
   const x = window.scrollX
   const y = window.scrollY
-  window.onscroll = function() { window.scrollTo(x, y) }
+  window.onmousewheel = function() { window.scrollTo(x, y) }
+  console.log("Stopping")
 }
 
 enableScroll = function() {
-  window.onscroll = function() {}
+  window.onmousewheel = function() {}
+  console.log("Starting")
 }
 
 $(document).ready(function () {
@@ -112,26 +123,38 @@ $(document).ready(function () {
         const pullVerticalContainerTop = ((documentScrollTop - Math.round(containerHeight - horizontalScrollContainerHeight)) * -1)
         verticalContainer.css("top", pullVerticalContainerTop)
         
+
+
+
         /** One page scroll simulation */
-        const bodyHeight = body.height()
-        const halfBodyHeight = Math.round(bodyHeight / 2)
-        if (currentScrollTop == null) {
-          console.log("scrolling", documentScrollTop)
-          if (parseInt(verticalContainer.css("top")) < (halfBodyHeight * -1)) {
-            currentScrollTop = documentScrollTop
-            const left = parseInt(horizontalScrollContainer.css("left")) * -1
-            const total = documentScrollTop - left + bodyHeight
+        // const bodyHeight = body.height()
+        // const halfBodyHeight = Math.round(bodyHeight / 2)
+        // if (currentScrollTop == null) {
+        //   // console.log("scrolling", documentScrollTop)
+        //   if (parseInt(verticalContainer.css("top")) < (halfBodyHeight * -1)) {
+        //     currentScrollTop = documentScrollTop
+        //     const left = parseInt(horizontalScrollContainer.css("left")) * -1
+        //     const total = documentScrollTop + bodyHeight
+        //     console.log
+            
+        //     disableScroll()
 
-            disableScroll()
+           
+        //     console.log(documentScrollTop)
 
-            verticalContainer.animate({
-              top: (total * -1)
-            }, 750, function() {
-              enableScroll()
-              setTimeout(function() { currentScrollTop = null }, 750)
-            })
-          }
-        }
+        //     $(document).animate({
+        //       scrollTop: (total)
+        //     }, 750, function() {
+        //       enableScroll()
+        //       currentScrollTop = null
+        //     })
+        //   }
+        // }
+
+
+
+
+
       }
     }
     /** Navigation */
